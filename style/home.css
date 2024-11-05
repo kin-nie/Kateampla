@@ -1,0 +1,33 @@
+body {
+  padding-top: 56px;
+}
+.carousel-item {
+  height: 65vh;
+  background: #777;
+  color: white;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-caption {
+  bottom: 3rem;
+}
+
+/* Add this CSS to your existing styles */
+#carouselExampleRide {
+  max-width: 50%; /* Adjust the percentage as needed */
+  max-height: 10%;
+  margin: auto; /* Center the carousel horizontally */
+}
+
+/* Custom CSS for modal login button */
+.modal-content .btn-primary {
+  background-color: rgb(228, 119, 9); /* Set background color */
+  border-color: rgb(228, 119, 9); /* Set border color */
+  color: white; /* Set text color */
+}
+
+.modal-content .btn-primary:hover {
+  background-color: #d8820a; /* Change background color on hover */
+  border-color: #d8820a; /* Change border color on hover */
+}
