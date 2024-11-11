@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GCash Payment</title>
+    <link rel="stylesheet" href="style/gcash.css" />
+    <script
+      src="https://kit.fontawesome.com/1fd0899690.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="paymentlogo">
+        <img src="assets/gcash.png" alt="GCash Logo" />
+        <h2>GCash Payment</h2>
+      </div>
+      <a href="conf_res.html"><i class="fa-solid fa-chevron-left"></i>Back</a>
+      <form>
+        <div class="payment-fields">
+          <label for="total_amount">Total Reservation Fee:</label><br />
+          <input type="text" id="res_fee" value="450 PHP" disabled /><br />
+
+          <label for="payment_amount">Payment Amount:</label><br />
+          <input
+            type="number"
+            id="payment_amount"
+            name="payment_amount"
+            value="450"
+            disabled
+          /><br />
+
+          <span>Please note that the reservation fee is non-refundable.</span>
+        </div>
+
+        <label for="gcash_number">GCash Number:</label><br />
+        <input
+          type="text"
+          id="gcash_number"
+          name="number"
+          placeholder="09XX XXX XXXX"
+          pattern="(\+63|0)9\d{9}"
+          title="Please enter a valid Philippine contact number"
+          required
+          value="09123456789"
+        /><br />
+
+        <!-- Replace the submit button with an anchor tag -->
+        <a href="reserved.html" class="pay-button">Pay via GCash</a>
+      </form>
+    </div>
+  </body>
+</html>
